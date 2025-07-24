@@ -1017,3 +1017,10 @@ const quiz4 = data
   .filter((x) => x.fullname.startsWith("A") || x.fullname.startsWith("E") || x.fullname.startsWith("I"))
   .filter((x) => Number(x.money.replace("$", "")) < 3000);
   window.console.log(quiz4)
+
+const quiz5 = data.map((x) => {
+    //"6759781907867137198"
+    x.creditcard = [...x.creditcard].map((x, i) => (x.creditcard.length - 4 > i ? x : "*" ));
+    return x;
+  });
+  
