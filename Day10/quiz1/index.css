@@ -1,0 +1,24 @@
+.box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.item {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+.item >.img{
+    object-fit: cover;
+    border-radius: 9999px;
+}
+.email{
+    color: gray;
+    text-decoration: underline;
+}
