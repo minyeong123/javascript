@@ -1,0 +1,27 @@
+.box{
+    display: flex;
+    flex-direction: column;
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+
+.item > img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.item > .info{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 20px;
+}
+.priceTypeName{
+    font-size: 20px;
+    font-weight: bold;
+}
